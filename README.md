@@ -1,40 +1,41 @@
-Teste de Velocidade de Internet com Interface CMD
+# Teste de Velocidade de Internet com Interface CMD
+
 Este é um projeto simples que permite realizar um teste de velocidade de internet usando a biblioteca speedtest-cli e exibe os resultados em tempo real em uma interface que simula um terminal CMD. O teste exibe informações de download, upload e latência em tempo real, à medida que o teste é executado.
 
-Funcionalidades
+# Funcionalidades
+
 Teste de Velocidade de Internet: Medição das velocidades de download, upload e latência.
 Interface em Tempo Real: Através de Server-Sent Events (SSE), a interface se comporta como um terminal, exibindo os resultados do teste em tempo real.
 Exibição em Formato CMD: As mensagens são exibidas uma abaixo da outra, com o estilo de terminal.
-Requisitos
+
+# Requisitos
+
 Antes de rodar o projeto, você precisa ter o seguinte instalado:
 
 Python 3.x: Se ainda não tiver o Python instalado, você pode baixá-lo em: https://www.python.org/downloads/
 Flask: Framework web para Python.
 speedtest-cli: Biblioteca para medir a velocidade da internet.
-Como Instalar as Dependências
+## Como Instalar as Dependências
 Clone este repositório ou baixe os arquivos.
 
 Instale as dependências com o comando:
 
-bash
-Copiar código
-pip install flask speedtest-cli
+
 Estrutura do Projeto
 bash
 Copiar código
 .
 ├── app.py                  # Arquivo principal do servidor Flask
-├── templates
-│   └── index.html           # Arquivo HTML com a interface de terminal
 └── README.md                # Este arquivo
-Como Executar
+
+## Como Executar
+
 Iniciar o Servidor Flask:
 
 Navegue até o diretório onde os arquivos estão localizados e execute o comando abaixo para iniciar o servidor Flask.
-
-bash
-Copiar código
+```script de shell
 python app.py
+```
 Acessar a Interface:
 
 Abra seu navegador e acesse http://localhost:5000 para visualizar a interface.
